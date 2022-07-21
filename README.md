@@ -1,10 +1,16 @@
 # Chapter
-Api feita com Asp NET CORE 5
+Api feita com ASP.NET CORE 5
+
+## Procedimentos 
+- Faça um clone do repositorio
+- Utilize o Visual Studio community
+- Execute dentro do VSCODE a API
+
 
 API tem no total 5 endpoints, como:
-- Criação de um livro 
+- Criação de um livro por ID
 - Atualização de um livro
-- Busca de um livro por ID
+- Buscar um livro por ID
 - Mostrar todos os livros
 - Deletar um livro
 
@@ -16,9 +22,9 @@ API tem no total 5 endpoints, como:
 
 ```json
 {
-	"titulo": "Harry Potter",
-	"quantidadepaginas": 300, 
-  "disponivel" true,
+ "titulo": "Harry Potter",
+ "quantidadepaginas": 300, 
+ "disponivel" true,
 }
 ```
 
@@ -26,19 +32,19 @@ API tem no total 5 endpoints, como:
 
 ```json
 
-No body
+"No body"
   
 ```
 
 ## Atualização de um livro
 
-`PUT /api/livros/id - FORMATO DA REQUISIÇÃO - STATUS 201`
+`PUT /api/livros/ID - FORMATO DA REQUISIÇÃO - STATUS 201`
 
 
 ```json
 {
-	"titulo": "Percy Jackson",
-	"quantidadepaginas": 200, 
+  "titulo": "Percy Jackson",
+  "quantidadepaginas": 200, 
   "disponivel" false,
 }
 ```
@@ -47,28 +53,28 @@ No body
 
 ```json
 {
-	"titulo": "Percy Jackson",
-	"quantidadepaginas": 200, 
-  "disponivel" false,
+ "titulo": "Percy Jackson",
+ "quantidadepaginas": 200, 
+ "disponivel" false,
 }
 ```
   
   
-  ## Busca um livro por ID
+  ## Buscar um livro por ID
 
-`GET /api/livros/id - FORMATO DA REQUISIÇÃO - STATUS 200`
+`GET /api/livros/ID - FORMATO DA REQUISIÇÃO - STATUS 200`
 
 
 ```json
-No Body
+"No Body"
 ```
 
 `FORMATO DA RESPOSTA`
 
 ```json
 {
-"titulo": "Percy Jackson",
-	"quantidadepaginas": 200, 
+  "titulo": "Percy Jackson",
+  "quantidadepaginas": 200, 
   "disponivel" false,
 
 }
@@ -80,7 +86,7 @@ No Body
 
 
 ```json
-No Body
+"No Body"
 ```
 
 `FORMATO DA RESPOSTA`
@@ -88,8 +94,8 @@ No Body
 ```json
 [
 {
-"titulo": "Percy Jackson",
-	"quantidadepaginas": 200, 
+  "titulo": "Percy Jackson",
+  "quantidadepaginas": 200, 
   "disponivel" false,
 
 }
@@ -97,18 +103,18 @@ No Body
 ...
 
 
- ## Deletando um livro
+ ## Deletar um livro por ID
   
 `DELETE /api/livros/ID - FORMATO DA REQUISIÇÃO - STATUS 201`
 
 
 ```json
-No Body
+"No Body"
 ```
 
 `FORMATO DA RESPOSTA`
 
 ```json
-No Body
+"No Body"
 ...
   
